@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script defer src="./index.js" type="module"></script>
+    <style>
+        #container{
+             width: 100%;
+            /* margin-left: 11%; */
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        /* #container tr{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid red; */
+        /* }  */
+        #container tr th, #container tr td{
+           padding: 0px 30px;
+           font-weight: bolder;
+           text-transform: capitalize;
+           
+           
+        }
+        table thead th{
+            border: 1px solid black;
+            font-size: 19px;
+        }
+        table tbody td{
+            border: 1px solid black;
+            font-size: 19px;
+        }
+        table tbody{
+            padding: 5px 0px;
+        }
+        
+        #view-btn,#delete-btn,#edit-btn{
+            margin: 5px 0px;
+            padding: 5px 30px;
+            cursor: pointer;
+            /* border: none; */
+            
+        }#image{
+            width: 80px;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+     <nav id="navbar">
+
+     </nav>
+     
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                  <th>id</th>
+                  <th>Image</th>
+                  <th>Product Name</th>
+                  <th>price</th>
+                  <th>View</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+               
+            </tbody>
+         </table>
+    </div> 
+</body>
+</html>
