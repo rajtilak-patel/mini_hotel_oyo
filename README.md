@@ -1,0 +1,1 @@
+# mini_hotel_oyo
