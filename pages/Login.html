@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log In</title>
+    <link rel="stylesheet" href="../styles/login.css">
 </head>
 <body>
+    <img src="https://sso.masaischool.com/brand_dark.svg" alt="logo">
+
+    <form>
+        <h1>Login </h1>
+        <label for="">Email</label><br />
+        <input id="Email" type="email" placeholder="Enter Your Email Name"  required /><br />
+        <label for="">Password</label><br />
+        <input id="password" type="password" placeholder="Enter Password "  required /><br />
+        <br />
+        
+        <button type="submit">Log In</button>
+
+        <h5>Don't hava an Account <a href="singn_up.html">Sing Up</a> </h5>
+      </form>
     
 </body>
 </html>
+<script>
+   document.querySelector("form").addEventListener("submit",getData);
+    function getData(){
+        event.preventDefault();
+        var login = document.getElementById("Email").value;
+        console.log(login)
+        var password = document.getElementById("password").value;
+        console.log(password)
+        var email1 = localStorage.getItem("email");
+        var password1 =  localStorage.getItem("password")
+  
+     if(login === email1 && password == password1){
+          alert("log In successfully Done");
+     }
+     else{
+        alert("Invailed Id and password");
+     }
+    }
+   
+</script>
